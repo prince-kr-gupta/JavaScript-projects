@@ -30,6 +30,7 @@ function playGame(playerChoice) {
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
+    //we have to add css class so we use classList property
     switch(result){
         case "YOU WIN!":
             resultDisplay.classList.add("greenText");
@@ -37,6 +38,7 @@ function playGame(playerChoice) {
         case "YOU LOSE!":
             resultDisplay.classList.add("redText");
             break;
+    
 
     }
 }
