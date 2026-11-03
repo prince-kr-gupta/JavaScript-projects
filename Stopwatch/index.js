@@ -11,7 +11,6 @@ function start() {
         startTime = Date.now() - elapsedTime;
         timer = setInterval(update,10);
         isRunning = true;
-         
     }
 }
 
@@ -22,6 +21,8 @@ function stop() {
         isRunning = false;
     }
 }
+
+
 function reset() {
     clearInterval(timer);
     startTime = 0;
@@ -43,8 +44,6 @@ function update() {
     seconds = String(seconds).padStart(2,"0");
     milliseconds = String(milliseconds).padStart(2,"0");
 
-
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
-
-
+    
 }
