@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", initializeSlider); //DOMContentLoa
 
 function initializeSlider() {
     if(slides.length > 0) {
-        slides[slideIndex].classList.add("displaySlide"); //displaySlide - It is in css we hidden the images
+        slides[slideIndex].classList.add("displaySlide"); //displaySlide - It is in css we hide the image
         interValId = setInterval(nextSlide,5000);
     }
 }
